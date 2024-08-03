@@ -3,8 +3,8 @@
   // Function to calculate the total price and add a new row with the total
   function addTotalRow() {
     // Get all the price elements using the data-ns-test attribute
-    const priceElements = document.querySelectorAll('[data-ns-test="prices"]');
     
+    const priceElements = document.querySelectorAll('[data-ns-test="price"]');
     // Initialize total price variable
     let totalPrice = 0;
     
