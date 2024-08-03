@@ -10,7 +10,7 @@
     
     // Loop through the price elements and sum up the prices
     priceElements.forEach(element => {
-      const price = parseFloat(element.textContent);
+      const price = parseInt(element.textContent);
       if (!isNaN(price)) {
         totalPrice += price;
       }
