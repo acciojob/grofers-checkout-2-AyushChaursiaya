@@ -11,7 +11,7 @@
     // Loop through the price elements and sum up the prices
     priceElements.forEach(element => {
   // Remove non-numeric characters from the price text
-  const priceText = element.textContent.replace(/[^\d.-]/g, '');
+  const priceText = element.textContent.replace(/[^0-9.]/g, '');
   const price = parseFloat(priceText);
   if (!isNaN(price)) {
     totalPrice += price;
