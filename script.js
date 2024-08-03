@@ -10,12 +10,13 @@
     
     // Loop through the price elements and sum up the prices
     priceElements.forEach(element => {
-      const priceText = element.textContent.replace(/[^\d.-]/g, '');
-	  const price = parseFloat(priceText);
-      if (!isNaN(price)) {
-        totalPrice += price;
-      }
-    });
+  // Remove non-numeric characters from the price text
+  const priceText = element.textContent.replace(/[^\d.-]/g, '');
+  const price = parseFloat(priceText);
+  if (!isNaN(price)) {
+    totalPrice += price;
+  }
+});
     
     // Create a new row
     const table = document.getElementById('groceryTable');
